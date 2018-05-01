@@ -44,18 +44,29 @@ in Chinese. It is written in Python.
 3. [GloVe: Global Vectors for Word Representation](https://nlp.stanford.edu/projects/glove/) an unsupervised learning algorithm for obtaining vector representations for words. Training is performed on aggregated global word-word co-occurrence statistics from a corpus.
 1. Li, Yitan, et al. [Word embedding revisited: A new representation learning and explicit matrix factorization perspective](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.719.9973&rep=rep1&type=pdf). IJCAI. 2015.
 1. O. Levy, Y. Goldberg, and I. Dagan. [Improving Distributional Similarity with Lessons Learned from Word Embeddings](http://www.aclweb.org/anthology/Q15-1016). Trans. Assoc. Comput. Linguist., 2015.
+2. Eric Nalisnick, Sachin Ravi. [Learning the Dimensionality of Word Embeddings](https://arxiv.org/abs/1511.05392v3). arXiv:1511.05392, 2015.
+   * They describe a method for learning word embeddings with data-dependent dimensionality. Their Stochastic Dimensionality Skip-Gram (SD-SG) and Stochastic Dimensionality Continuous Bag-of-Words (SD-CBOW) are nonparametric analogs of Mikolov et al.'s (2013) well-known 'word2vec' model.
 1. Yang, Wei  and  Lu, Wei  and  Zheng, Vincent. [A Simple Regularization-based Algorithm for Learning Cross-Domain Word Embeddings](http://www.aclweb.org/anthology/D/D17/D17-1312.pdf). ACL, 2017. The source code in C is [cross_domain_embedding](https://github.com/Victor0118/cross_domain_embedding).
    - This paper presents a simple yet effective method for learning word embeddings based on text from different domains.
 1. Sebastian Ruder. [Word embeddings in 2017: Trends and future directions](http://ruder.io/word-embeddings-2017/)
+2. Maria Pelevina, Nikolay Arefyev, Chris Biemann, Alexander Panchenko. [Making Sense of Word Embeddings](https://arxiv.org/abs/1708.03390). arXiv:1708.03390, 2017. The source code written in Python is [sensegram](https://github.com/tudarmstadt-lt/sensegram).
+   - Making sense embedding out of word embeddings using graph-based word sense induction.
 1. Piotr Bojanowski, Edouard Grave, Armand Joulin, Tomas Mikolov. [Enriching Word Vectors with Subword Information](https://arxiv.org/abs/1607.04606). arXiv:1607.04606. 2017. The souce code in C++11 is [fastText](https://github.com/facebookresearch/fastText), which is a library for efficient learning of word representations and sentence classification.
 1. Alexis Conneau, Guillaume Lample, Marc'Aurelio Ranzato, Ludovic Denoyer and Herv{\'e} J{\'e}gou. [Word Translation Without Parallel Data](https://arxiv.org/abs/1710.04087). arXiv:1710.04087, 2017. The source code in Python is [MUSE](https://github.com/facebookresearch/MUSE), which is a library for multilingual unsupervised or supervised word embeddings.
 1. Tomas Mikolov, Edouard Grave, Piotr Bojanowski, Christian Puhrsch and Armand Joulin. [Advances in Pre-Training Distributed Word Representations](https://arxiv.org/abs/1712.09405). arXiv:1712.09405, 2017.
+2. Gabriel Grand, Idan Asher Blank, Francisco Pereira, Evelina Fedorenko. [Semantic projection: recovering human knowledge of multiple, distinct object features from word embeddings](https://arxiv.org/abs/1802.01241v2). arXiv:1802.01241, 2018.
+   * Could context-dependent relationships be recovered from word embeddings? To address this issue, they introduce a powerful, domain-general solution: "semantic projection" of word-vectors onto lines that represent various object features, like size (the line extending from the word "small" to "big"), intelligence (from "dumb" to "smart"), or danger (from "safe" to "dangerous").
 2. Edouard Grave, Piotr Bojanowski, Prakhar Gupta, Armand Joulin, Tomas Mikolov. [Learning Word Vectors for 157 Languages](https://arxiv.org/abs/1802.06893v2). arXiv:1802.06893v2, Proceedings of LREC, 2018.
 3. Douwe Kiela, Changhan Wang and Kyunghyun Cho. [Context-Attentive Embeddings for Improved Sentence Representations](https://arxiv.org/abs/1804.07983). arXiv:1804.07983, 2018. 
    * While one of the first steps in many NLP systems is selecting what embeddings to use, they argue that such a step is better left for neural networks to figure out by themselves. To that end, they introduce a novel, straightforward yet highly effective method for combining multiple types of word embeddings in a single model, leading to state-of-the-art performance within the same model class on a variety of tasks.
+4. Laura Wendlandt, Jonathan K. Kummerfeld, Rada Mihalcea. [Factors Influencing the Surprising Instability of Word Embeddings](https://arxiv.org/abs/1804.09692v1). arXiv:1804.09692, NAACL HLT 2018.
+   * They provide empirical evidence for how various factors contribute to the stability of word embeddings, and analyze the effects of stability on downstream tasks.
 
 ### Sentence Representation
 
+1. Kalchbrenner, Nal, Edward Grefenstette, and Phil Blunsom. [A convolutional neural network for modelling sentences](http://arxiv.org/abs/1404.2188). arXiv:1404.2188, 2014.
+2. Quoc Le and Tomas Mikolov. [Distributed representations of sentences and documents](http://arxiv.org/abs/1405.4053). arXiv:1405.4053, 2014.
+3. Yoon Kim. [Convolutional neural networks for sentence classification](http://arxiv.org/abs/1408.5882). arXiv:1408.5882, EMNLP 2014.
 1. Ryan Kiros, Yukun Zhu, Ruslan Salakhutdinov, Richard S. Zemel, Antonio Torralba, Raquel Urtasun and Sanja Fidler. [Skip-Thought Vectors](https://arxiv.org/abs/1506.06726). arXiv:1506.06726, 2015. The source code in Python is [skip-thoughts](https://github.com/ryankiros/skip-thoughts).
 1. Ledell Wu, Adam Fisch, Sumit Chopra, Keith Adams, Antoine Bordes, Jason Weston. [StarSpace: Embed All The Things](https://arxiv.org/abs/1709.03856). arXiv:1709.03856, 2017. The source code in C++11 is [StarSpace] (https://github.com/facebookresearch/Starspace/).
 2. Alexis Conneau, Douwe Kiela, Holger Schwenk, Loic Barrault, Antoine Bordes. [Supervised Learning of Universal Sentence Representations from Natural Language Inference Data](https://arxiv.org/abs/1705.02364). arXiv:1705.02364v4, EMNLP 2017. The source code in Python is [InferSent](https://github.com/facebookresearch/InferSent). 
@@ -277,10 +288,3 @@ Co-Occurrence Statistics](https://www.microsoft.com/en-us/research/wp-content/up
 17. Christopher Clark, Matt Gardner. [Simple and Effective Multi-Paragraph Reading Comprehension](https://arxiv.org/abs/1710.10723). arXiv:1710.10723, 2017. The code written in Python is [document-qa](https://github.com/allenai/document-qa).
 18. Zichao Li, Xin Jiang, Lifeng Shang, Hang Li. [Paraphrase Generation with Deep Reinforcement Learning](https://arxiv.org/abs/1711.00279v2). arXiv:1711.00279, 2017.
 19. Tomáš Kočiský, Jonathan Schwarz, Phil Blunsom, Chris Dyer, Karl Moritz Hermann, Gábor Melis, Edward Grefenstette. [The NarrativeQA Reading Comprehension Challenge](https://arxiv.org/abs/1712.07040v1). arXiv:1712.07040, 2017. 
-
-### Sentence Modelling
-
-1. Kalchbrenner, Nal, Edward Grefenstette, and Phil Blunsom. [A convolutional neural network for modelling sentences](http://arxiv.org/abs/1404.2188). arXiv:1404.2188, 2014.
-2. Kim, Yoon. [Convolutional neural networks for sentence classification](http://arxiv.org/abs/1408.5882). arXiv:1408.5882, 2014.
-3. Le, Quoc V., and Tomas Mikolov. [Distributed representations of sentences and documents](http://arxiv.org/abs/1405.4053). arXiv:1405.4053, 2014.
-4. Yang, Zichao, Diyi Yang, Chris Dyer, Xiaodong He, Alex Smola, and Eduard Hovy. [Hierarchical Attention Networks for Document Classification](http://www.cs.cmu.edu/~diyiy/docs/naacl16.pdf).  In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. 2016.
