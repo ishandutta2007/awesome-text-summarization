@@ -11,16 +11,12 @@ A curated list of resources dedicated to text summarization
 1. [Opinosis dataset](http://kavita-ganesan.com/opinosis-opinion-dataset) contains 51 articles. Each article is about a product’s feature, like iPod’s Battery Life, etc. and is a collection of reviews by customers who purchased that product. Each article in the dataset has 5 manually written “gold” summaries. Usually the 5 gold summaries are different but they can also be the same text repeated 5 times.
 2. [DUC](http://duc.nist.gov/)
 3. [English Gigaword](https://catalog.ldc.upenn.edu/LDC2003T05): English Gigaword was produced by Linguistic Data Consortium (LDC).
-4. [CNN and Daily Mail](http://cs.nyu.edu/~kcho/DMQA/) or [github](https://github.com/deepmind/rc-data).
-   - *CNN* contains the documents and accompanying questions from the news articles of CNN. There are approximately 90k documents and 380k questions.
-   - *Daily Mail* contains the documents and accompanying questions from the news articles of Daily Mail. There are approximately 197k documents and 879k questions.
-5. [Processed CNN and Daily Mail](https://github.com/danqi/rc-cnn-dailymail) datasets are just simply concatenation of all data instances and keeping document, question and answer only for their inputs.
 6. [Large Scale Chinese Short Text Summarization Dataset（LCSTS）](http://icrc.hitsz.edu.cn/Article/show/139.html): This corpus is constructed from the Chinese microblogging website SinaWeibo. It consists of over 2 million real Chinese short texts with short summaries given by the writer of each text.
 7. Ziqiang Cao, Chengyao Chen, Wenjie Li, Sujian Li, Furu Wei, Ming Zhou. [TGSum: Build Tweet Guided Multi-Document Summarization Dataset](https://arxiv.org/abs/1511.08417v1). arXiv:1511.08417, 2015.
-8. [SQuAD](https://rajpurkar.github.io/SQuAD-explorer/) a new reading comprehension dataset, consisting of questions posed by crowdworkers on a set of Wikipedia articles, where the answer to every question is a segment of text, or span, from the corresponding reading passage. 
-9. Wei He, Kai Liu, Yajuan Lyu, Shiqi Zhao, Xinyan Xiao, Yuan Liu, Yizhong Wang, Hua Wu, Qiaoqiao She, Xuan Liu, Tian Wu, Haifeng Wang. [DuReader: a Chinese Machine Reading Comprehension Dataset from Real-world Applications](https://arxiv.org/abs/1711.05073). arXiv:1711.05073, 2017. The **DuReader Dataset** and **DuReader Baseline Systems** could be downloaded from the [DuReader github](https://github.com/baidu/DuReader).
-10. [MS-MARCO](http://www.msmarco.org/) is a new large scale dataset for reading comprehension and question answering.
-11. Avinesh P.V.S., Maxime Peyrard, Christian M. Meyer. [Live Blog Corpus for Summarization](https://arxiv.org/abs/1802.09884v1). arXiv:1802.09884, 2018.
+9. [scisumm-corpus](https://github.com/WING-NUS/scisumm-corpus) contains a release of the scientific document summarization corpus and annotations from the WING NUS group.
+12. Avinesh P.V.S., Maxime Peyrard, Christian M. Meyer. [Live Blog Corpus for Summarization](https://arxiv.org/abs/1802.09884v1). arXiv:1802.09884, 2018.
+13. Alexander R. Fabbri, Irene Li, Prawat Trairatvorakul, Yijiao He, Wei Tai Ting, Robert Tung, Caitlin Westerfield, Dragomir R. Radev.[TutorialBank: A Manually-Collected Corpus for Prerequisite Chains, Survey Extraction and Resource Recommendation](https://arxiv.org/abs/1805.04617). arXiv:1805.04617, 2018. The source code is [TutorialBank](https://github.com/Yale-LILY/TutorialBank). All the datasets could be found through the [search engine](http://tangra.cs.yale.edu/newaan/). The blog [TutorialBank: Learning NLP Made Easier](https://alex-fabbri.github.io/TutorialBank/) is an excellent user guide with step by step instructions on how to use the search engine.
+
 
 ### Text Summarization Software
 
@@ -181,6 +177,8 @@ Foundations and Trend in Information Retrieval, 2011. [The slides](https://www.f
 25. Paul Azunre, Craig Corcoran, David Sullivan, Garrett Honke, Rebecca Ruppel, Sandeep Verma, Jonathon Morgan. [Abstractive Tabular Dataset Summarization via Knowledge Base Semantic Embeddings](https://arxiv.org/abs/1804.01503v2). arXiv:1804.01503, 2018.
 26. Arman Cohan, Franck Dernoncourt, Doo Soon Kim, Trung Bui, Seokhwan Kim, Walter Chang, Nazli Goharian. [A Discourse-Aware Attention Model for Abstractive Summarization of Long Documents](https://arxiv.org/abs/1804.05685v1). arXiv:1804.05685, 2018.
 27. Ramakanth Pasunuru, Mohit Bansal. [Multi-Reward Reinforced Summarization with Saliency and Entailment](https://arxiv.org/abs/1804.06451v1). arXiv:1804.06451, 2018.
+28. Shuming Ma, Xu Sun, Junyang Lin, Xuancheng Ren. [A Hierarchical End-to-End Model for Jointly Improving Text Summarization and Sentiment Classification](https://arxiv.org/abs/1805.01089). arXiv:1805.01089, IJCAI 2018.
+28. Li Wang, Junlin Yao, Yunzhe Tao, Li Zhong, Wei Liu, Qiang Du. [A Reinforced Topic-Aware Convolutional Sequence-to-Sequence Model for Abstractive Text Summarization](https://arxiv.org/abs/1805.03616). arXiv:1805.03616, International Joint Conference on Artificial Intelligence and European Conference on Artificial Intelligence (IJCAI-ECAI), 2018.
 
 ### Text Summarization
 
@@ -280,26 +278,3 @@ Co-Occurrence Statistics](https://www.microsoft.com/en-us/research/wp-content/up
 5. Ahmad Kamal. [Review Mining for Feature Based Opinion Summarization and Visualization](https://arxiv.org/abs/1504.03068v2). arXiv:1504.03068, 2015.
 6. Haibing Wu, Yiwei Gu, Shangdi Sun and Xiaodong Gu. [Aspect-based Opinion Summarization with Convolutional Neural Networks](https://arxiv.org/abs/1511.09128). 2015.
 7. Lu Wang, Hema Raghavan, Claire Cardie, Vittorio Castelli. [Query-Focused Opinion Summarization for User-Generated Content](https://arxiv.org/abs/1606.05702v1). arXiv:1606.05702, 2016.
-
-### Machine Reading Comprehension
-
-1. Karl Moritz Hermann, Tomas Kocisky, Edward Grefenstette, Lasse Espeholt, Will Kay, Mustafa Suleyman, and Phil Blunsom. [Teaching machines to read and comprehend](http://papers.nips.cc/paper/5945-teaching-machines-to-read-and-comprehend). NIPS, 2015. The source code in Python is [DeepMind-Teaching-Machines-to-Read-and-Comprehend](https://github.com/thomasmesnard/DeepMind-Teaching-Machines-to-Read-and-Comprehend).
-2. Hill, Felix, Antoine Bordes, Sumit Chopra, and Jason Weston. [The Goldilocks Principle: Reading Children's Books with Explicit Memory Representations](http://arxiv.org/abs/1511.02301). arXiv:1511.02301, 2015.
-3. Kadlec, Rudolf, Martin Schmid, Ondrej Bajgar, and Jan Kleindienst. [Text Understanding with the Attention Sum Reader Network](http://arxiv.org/abs/1603.01547). arXiv:1603.01547, 2016.
-. Danqi Chen, Jason Bolton and Christopher D. Manning. [A Thorough Examination of the CNN/Daily Mail Reading Comprehension Task](https://arxiv.org/abs/1606.02858).     arXiv:1606.02858, ACL, 2016. The source code in Python is [rc-cnn-dailymail](https://github.com/danqi/rc-cnn-dailymail).
-4. Dhingra, Bhuwan, Hanxiao Liu, William W. Cohen, and Ruslan Salakhutdinov. [Gated-Attention Readers for Text Comprehension](http://arxiv.org/abs/1606.01549). arXiv:1606.01549, 2016.
-5. Sordoni, Alessandro, Phillip Bachman, and Yoshua Bengio. [Iterative Alternating Neural Attention for Machine Reading](http://arxiv.org/abs/1606.02245). arXiv:1606.02245, 2016.
-6. Trischler, Adam, Zheng Ye, Xingdi Yuan, and Kaheer Suleman. [Natural Language Comprehension with the EpiReader](http://arxiv.org/abs/1606.02270). arXiv:1606.02270, 2016.
-7. Yiming Cui, Zhipeng Chen, Si Wei, Shijin Wang, Ting Liu, Guoping Hu. [Attention-over-Attention Neural Networks for Reading Comprehension](http://arxiv.org/abs/1607.04423). arXiv:1607.04423, 2016.
-8. Yiming Cui, Ting Liu, Zhipeng Chen, Shijin Wang, Guoping Hu. [Consensus Attention-based Neural Networks for Chinese Reading Comprehension](https://arxiv.org/abs/1607.02250). arXiv:1607.02250, 2016.
-9. Shuohang Wang, Jing Jiang. [Machine Comprehension Using Match-LSTM and Answer Pointer](https://arxiv.org/abs/1608.07905). arXiv:1608.07905, 2016.
-10. Yelong Shen, Po-Sen Huang, Jianfeng Gao, Weizhu Chen. [ReasoNet: Learning to Stop Reading in Machine Comprehension](https://arxiv.org/abs/1609.05284). arXiv:1609.05284, 2016.
-11. Daniel Hewlett, Alexandre Lacoste, Llion Jones, Illia Polosukhin, Andrew Fandrianto, Jay Han, Matthew Kelcey and David Berthelot. [WIKIREADING: A Novel Large-scale Language Understanding Task over Wikipedia](http://www.aclweb.org/anthology/P/P16/P16-1145.pdf). ACL, 1535-1545, 2016.
-12. Xinya Du, Junru Shao, Claire Cardie. [Learning to Ask: Neural Question Generation for Reading Comprehension](https://arxiv.org/abs/1705.00106v1). arXiv:1705.00106, 2017.
-13. Minghao Hu, Yuxing Peng, Xipeng Qiu. [Mnemonic Reader for Machine Comprehension](https://arxiv.org/abs/1705.02798). arXiv:1705.02798, 2017.
-14. Wenhui Wang, Nan Yang, Furu Wei, Baobao Chang and Ming Zhou. [R-NET: Machine Reading Comprehension with Self-matching Networks](https://www.microsoft.com/en-us/research/publication/mcr/). ACL, 2017.
-15. Xingdi Yuan, Tong Wang, Caglar Gulcehre, Alessandro Sordoni, Philip Bachman, Sandeep Subramanian, Saizheng Zhang, Adam Trischler. [Machine Comprehension by Text-to-Text Neural Question Generation](https://arxiv.org/abs/1705.02012v2). arXiv:1705.02012, 2017. 
-16. Chuanqi Tan, Furu Wei, Nan Yang, Bowen Du, Weifeng Lv, Ming Zhou. [S-Net: From Answer Extraction to Answer Generation for Machine Reading Comprehension](https://arxiv.org/abs/1706.04815). arXiv:1706.04815, 2017.
-17. Christopher Clark, Matt Gardner. [Simple and Effective Multi-Paragraph Reading Comprehension](https://arxiv.org/abs/1710.10723). arXiv:1710.10723, 2017. The code written in Python is [document-qa](https://github.com/allenai/document-qa).
-18. Zichao Li, Xin Jiang, Lifeng Shang, Hang Li. [Paraphrase Generation with Deep Reinforcement Learning](https://arxiv.org/abs/1711.00279v2). arXiv:1711.00279, 2017.
-19. Tomáš Kočiský, Jonathan Schwarz, Phil Blunsom, Chris Dyer, Karl Moritz Hermann, Gábor Melis, Edward Grefenstette. [The NarrativeQA Reading Comprehension Challenge](https://arxiv.org/abs/1712.07040v1). arXiv:1712.07040, 2017. 
